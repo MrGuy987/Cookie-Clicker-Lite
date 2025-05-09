@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="images/cookie.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Clicker Lite</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansation&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="title">
+    <h1>Cookie Clicker Lite</h1>
+  </div>
+  <div class="main">
+    <div class="left">
+      <div id="cookie-wrapper">
+        <div id="cookie"></div>
+      </div>
+      <div id="count">Cookies: 0</div>
+      <div id="cps">Cookies per second: 0</div>
+
+      <div class="stats-panel" id="stats-panel">
+        <p>Total Cookies: <span id="total-cookies">0</span></p>
+        <p>Golden Cookies Clicked: <span id="golden-clicks">0</span></p>
+        <p>Time Played: <span id="time-played">0s</span></p><br><br>
+        <button onclick="saveGame()" class="save">Save Game</button>
+        <button onclick="loadGame()" class="load">Load Game</button>
+        <button class="prestige-button" onclick="prestige()">Prestige</button>
+      </div>
+    </div>
+
+    <div class="right" id="shop">
+      <!-- Shop items injected here -->
+    </div>
+  </div>
+  <footer>
+    Created by Sean<br>
+    <button onclick="var name=prompt('Add how many cookies?'); alert('Lol get trolled. No cookies for you');" class="troll">Get free cookies. </button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
